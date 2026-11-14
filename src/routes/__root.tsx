@@ -111,7 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
     scripts: [
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=GTM-5TKGCDCX",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-B53KESLW3W",
         async: true,
       },
       {
@@ -119,7 +119,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'GTM-5TKGCDCX');
+          gtag('config', 'G-B53KESLW3W');
         `,
       },
     ],
