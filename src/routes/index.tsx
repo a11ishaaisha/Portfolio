@@ -6,6 +6,14 @@ import { initializePortfolio } from '@/lib/portfolio-runtime';
 
 export const Route = createFileRoute('/')({
   head: () => ({
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YOUR-ID');
+</script>
     meta: [
       { title: 'Aisha Firdouse — Portfolio' },
       { name: 'description', content: "Branding, campaigns and video, built with a marketer's eye." },
