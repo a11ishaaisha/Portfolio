@@ -28,4 +28,3 @@ function Portfolio() {
   }, []);
   return <div ref={root} dangerouslySetInnerHTML={{ __html: portfolioContent }} />;
 }
-.. this was the earler code
