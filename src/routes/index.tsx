@@ -7,7 +7,7 @@ import { initializePortfolio } from '@/lib/portfolio-runtime';
 export const Route = createFileRoute('/')({
   head: () => ({
     <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-ID"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B53KESLW3W"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
