@@ -30,31 +30,27 @@ function Portfolio() {
 
   // Google Analytics 4
   useEffect(() => {
-    const measurementId = 'G-B53KESLW3W'; // Replace with your actual ID
+    const measurementId = 'G-B53KESLW3W'; // Insert your actual GA4 ID
+
+    if (document.querySelector('#google-analytics-script')) return;
 
     const script = document.createElement('script');
+    script.id = 'google-analytics-script';
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-
     document.head.appendChild(script);
 
     window.dataLayer = window.dataLayer || [];
 
-    function gtag(...args: any[]) {
+    window.gtag = function (...args: any[]) {
       window.dataLayer.push(args);
-    }
-
-    window.gtag = gtag;
-
-    gtag('js', new Date());
-    gtag('config', measurementId);
-
-    return () => {
-      script.remove();
     };
+
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId);
   }, []);
 
-  // Original portfolio initialization
+  // Portfolio initialization
   useEffect(() => {
     if (!root.current) return;
 
